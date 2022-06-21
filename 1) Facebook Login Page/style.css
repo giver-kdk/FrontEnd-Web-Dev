@@ -1,0 +1,151 @@
+*
+{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+body
+{
+	/* background-image: url('Images/Facebook_Login_Reference.png'); */
+	background-color: #F0F2F5;
+}
+#facebook
+{
+	width: 301.06;
+	height: 106px;
+	/* border: 2px solid black; */
+	margin: 179px 0px 0px 160px;
+	z-index: 1;
+}
+#intro p
+{
+	font-family: arial;
+	font-size: 28px;
+	margin: -14px 0px 0px 184px;
+	width: 430px;
+	color: #1D1C34;
+	/* border: 1px solid black; */
+}
+#loginForm
+{
+	width: 398px;
+	height: 350px;
+	margin: -205px 0px 0px 765px;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	box-shadow: 0px 5px 14px #d0d2d6;
+}
+#emailBox
+{
+	width: 363px;
+	height: 50px; 
+	margin: 14px 10px 10px 17px;
+	border: 1.5px solid rgb(133, 133, 133);
+	border-radius: 5px;
+	padding-left: 15px;
+	font-size: 17px;
+}
+#emailBox::placeholder
+{
+	font-size: 16.7px;
+	color: #a3949c;
+}
+#passwordBox
+{
+	width: 363px;
+	height: 50px; 
+	margin: 5px 10px 10px 17px;
+	border: 1.5px solid rgb(133, 133, 133);
+	border-radius: 5px;
+	padding-left: 15px;
+	font-size: 17px;
+}
+#passwordBox::placeholder
+{
+	font-size: 16.7px;
+	color: #a3949c;
+}
+#loginButton
+{
+	width: 363px;
+	height: 50px; 
+	margin: 5px 10px 10px 17px;
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #1877f2;;
+	color: #ffffff;
+}
+#forgot
+{
+	width: 130px;
+	margin: 5px 4px 4px 141px; 
+	font-family: arial;
+	font-size: 14px;
+	color: #446bf1;
+}
+#formBox a
+{
+	text-decoration: none;
+}
+#newAccount
+{
+	margin: 45px 50px 50px 100px;
+	width: 194px;
+	height: 50px;
+	border: 1px solid #ffffff;
+	border-radius: 7px;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 17px;
+	background-color: #42b72a;
+	color: #ffffff
+}
+#createPage
+{
+	margin: 2px 0px 0px 46px;
+	font-family: arial;
+	font-size: 14px;
+}
+#createPage #create
+{
+	text-decoration: none;
+	color: #221e21;
+}
+#emailBox:focus
+{
+	outline: none;					/* Neccessary for changing background color on focus */
+	border: 1.5px solid #1877f2;
+}
+#emailBox:focus::placeholder
+{
+	color: #ccd0d5;
+}
+#passwordBox:focus
+{
+	outline: none;					
+	border: 1.5px solid #1877f2;
+}
+#passwordBox:focus::placeholder
+{
+	color: #ccd0d5;
+}
+#loginButton:hover
+{
+	cursor: pointer;
+	background-color: #156fe6;
+}
+#forgot:hover
+{
+	text-decoration: underline;
+}
+#newAccount:hover
+{
+	cursor: pointer;
+	background-color: #40ac2a;
+}
+#createPage #create:hover
+{
+	text-decoration: underline;
+}

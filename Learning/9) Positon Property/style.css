@@ -1,0 +1,61 @@
+*
+{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+.box
+{
+	border: 2px solid red;
+	width: 120px;
+	height: 120px;
+	display: inline-block;
+	margin: 1px;
+}
+#square1
+{
+	/* Position is static by default. So, it cannot be moved */
+	left: 20px;
+	top: 40px;
+}
+#square2
+{
+	/* Element positions with respect to its initial position and leaves a gap( On that previous position) */
+	position: relative;
+	top: 160px;					/* Means 160px distance from top side */
+	/* right: 20px; */
+	/* bottom: 20px; */
+}
+#square3
+{
+	/* Position changes with respect to position of first parent element and doesn't leave any gap*/
+	/* In this case, the parent is body */
+	position: absolute;
+	/* Move 20px from bottom side of body */
+	bottom: 20px;
+	/* Move 230px from right side of body */
+	right: 230px;
+}
+#square4
+{
+	/* Position changes with respect to browser window and doesn't leave any gap */
+	/* Element stays at same place of viewport */
+	position: fixed;
+	top: 160px;
+	right: 110px;
+}
+#square5
+{
+	/* Position changes with respect to user scroll bar and leaves a gap*/
+	/* First parent size is the scrolling limit */
+	position: sticky;
+	/* Starts sticking to a position when scroll bar moves element 20px near top side */
+	top: 20px;
+	/* right: 930px; */
+}
+.container
+{
+	border: 2px solid red;
+	height: 1000px;
+	margin-top: 300px;
+}

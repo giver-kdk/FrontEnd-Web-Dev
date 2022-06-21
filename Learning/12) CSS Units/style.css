@@ -1,0 +1,52 @@
+*
+{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+.box
+{
+	border: 2px solid red;
+	width: 100px;
+	height: 60px;
+	margin: 10px;
+}
+#box1
+{
+	/* Units in pixels */
+	width: 200px;
+}
+#box2
+{
+	/* Unit in percentrage of total screen width */
+	width: 20%;
+}
+#box3
+{
+	/* Units in em which is the size of parent container font */
+	width: 6em;
+	/* Here, 5em means 5 times the size of parent container font */
+	font-size: 5em;
+	/* Here, 1m padding means 1 times the size of above font(5em) not the parent font */
+	padding: 1em;
+}
+#box4
+{
+	/* Units in rem which is the size of whole font */
+	/* Here, 30rem means 30 times the size of html font */
+	width: 30rem;
+	height: 6rem;
+	font-size: 5rem;
+	/* Here, 1rem means 1 times the size of  font. Hence, rem unit is stable than em unit.*/
+	padding: 1rem;
+}
+#box5
+{
+	/* Units in vw which is vertical width */
+	width: 80vw;					/* Here, 80vw means 80% of vertical width */
+}
+#box6
+{
+	/* Units in vh which is vertical height */
+	width: 40vh;
+}

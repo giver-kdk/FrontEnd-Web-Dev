@@ -1,0 +1,370 @@
+/* Header Section with Navigation Bar*/
+.container {
+	width: 100%;
+	/* height: 1650px; */
+  }
+header {
+	position: absolute;
+	top: 5px;
+	width: 100%;
+	height: 130px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+  }
+  header img {
+	margin-left: 10px;
+	margin-right: 10px;
+  }
+  header nav {
+	width: 100%;
+	display:flex;
+	justify-content: center;
+  }
+  header nav ul li a {
+	font-weight: bolder;
+	margin: 5px;
+	padding: 6px 10px;
+  }
+  .download {
+	width: 160px;
+	display: flex;
+	justify-content: center;
+	margin: 0px 0px;
+}
+.download button {
+	width: 150px;
+	height: 25px;
+  }
+  /* Home Section Styling */
+  #home {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 420px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+  }
+  #home .content {
+	text-align: center;
+	width: 96%;
+  }
+  .content h1 {
+	line-height: 30px;
+	margin-top: 160px;
+	margin-bottom: 20px;
+  }
+  .content p {
+	font-size: 15px;
+	padding: 10px;
+	margin-bottom: 20px;
+  }
+  #home button {
+	width: 130px;
+	height: 30px;
+	font-size: 15px;
+  }
+  #home::before {
+	background-position: 0px -5px;
+  }
+  /* Services Section Styling */
+  #services {
+	position: absolute;
+	top: 423px;
+	width: 100%;
+	height: 420px;
+	text-align: center;
+  }
+  #services::before {
+	background-position: -577px 0px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  }
+  
+  #services h2 {
+	line-height: 45px;
+	font-size: 18px;
+  }
+  .foods {
+	width: 550vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+  }
+  .items1, .items2{
+	width: 300px;
+	height: 350px;
+	line-height: 22px;
+  }
+  .items1 p, .items2 p{
+	text-align: center;
+	font-size: 18px;
+	/* width: 170px; */
+	padding: 10px 20px;
+  }
+  .items1 img, .items2 img{
+	margin-top: 25px;
+	width: 170px;
+  }
+  .items1
+  {
+	position: relative;
+	top: 0px;
+	right: 0px;
+	animation-name: phoneSlide1;
+	animation-duration: 30s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+  }
+  .items2
+  {
+	position: relative;
+	top: 0px;
+	right: 0px;
+	animation-name: phoneSlide1;
+	animation-duration: 30s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+  }
+  @keyframes phoneSlide1
+{
+  from
+  {
+    opacity: 1;
+    position: relative;
+    right: 0vw;
+  }
+  5%
+  {
+    opacity: 1;
+    position: relative;
+    right: 0vw;
+  }
+  10%
+  {
+    opacity: 1;
+    position: relative;
+    right: 90vw;
+  }
+  15%
+  {
+    opacity: 1;
+    position: relative;
+    right: 90vw;
+  }
+  20%
+  {
+    opacity: 1;
+    position: relative;
+    right: 180vw;
+  }
+  25%
+  {
+    opacity: 1;
+    position: relative;
+    right: 180vw;
+  }
+  30%
+  {
+    opacity: 1;
+    position: relative;
+    right: 270vw;
+  }
+  35%
+  {
+    opacity: 1;
+    position: relative;
+    right: 270vw;
+  }
+  40%
+  {
+    opacity: 1;
+    position: relative;
+    right: 360vw;
+  }
+  45%
+  {
+    opacity: 1;
+    position: relative;
+    right: 360vw;
+  }
+  50%
+  {
+    opacity: 1;
+    position: relative;
+    right: 450vw;
+  }
+  55%
+  {
+    opacity: 1;
+    position: relative;
+    right: 450vw;
+  }
+  60%
+  {
+    opacity: 1;
+    position: relative;
+    right: 360vw;
+  }
+  65%
+  {
+    opacity: 1;
+    position: relative;
+    right: 360vw;
+  }
+  70%
+  {
+    opacity: 1;
+    position: relative;
+    right: 270vw;
+  }
+  75%
+  {
+    opacity: 1;
+    position: relative;
+    right: 270vw;
+  }
+  80%
+  {
+    opacity: 1;
+    position: relative;
+    right: 180vw;
+  }
+  85%
+  {
+    opacity: 1;
+    position: relative;
+    right: 180vw;
+  }
+  90%
+  {
+    opacity: 1;
+    position: relative;
+    right: 90vw;
+  }
+  95%
+  {
+    opacity: 1;
+    position: relative;
+    right: 90vw;
+  }
+  to
+  {
+    opacity: 1;
+    position: relative;
+    right: 0vw;
+  }
+}
+  /* Association Section Styling */
+  #associations {
+	position: absolute;
+	top: 843px;
+	width: 100%;
+	height: 320px;
+	text-align: center;
+  }
+  #associations h2 {
+	line-height: 60px;
+	font-size: 18px;
+  }
+  #associations p {
+	line-height: 25px;
+	font-size: 13px;
+  }
+  #logos {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+  }
+  #logos img {
+	width: 90px;
+	margin: 5px 10px;
+  }
+  /* Contact Section Styling */
+  #contacts {
+	position: absolute;
+	top: 1163px;
+	width: 100%;
+	height: 360px;
+	text-align: center;
+  }
+  #contacts::before {
+    background-position: -217px 0px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  }
+  #contacts h2 {
+	font-size: 18px;
+	text-align: center;
+	margin-left: 0px;
+	line-height: 40px;
+  }
+  #formContacts {
+	width: 100%;
+	height: 270px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  }
+  #formField {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	width: 350px;
+	height: 100%;
+	padding-left: 10px;
+  }
+  #formField label {
+	font-size: 17px;
+  }
+  .userinput {
+	width: 320px;
+	height: 35px;
+	margin: 5px;
+	padding: 0px 35px;
+	font-size: 15px;
+  }
+  #socialMedia {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-end;
+	padding: 0px;
+	width: 250px;
+  }
+  #socialMedia img {
+	width: 30px;
+	margin: 0px 5px;
+  }
+
+  /* Footer Section Styling */
+  footer {
+	position: absolute;
+	top: 1525px;
+	width: 100%;
+	height: 70px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+  footer p {
+	font-family: arial;
+	text-align: center;
+	font-size: 10px;
+	color:rgb(39, 39, 39);
+  }
+  

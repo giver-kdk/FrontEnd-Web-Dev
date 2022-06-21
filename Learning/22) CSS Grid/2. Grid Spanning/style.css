@@ -1,0 +1,31 @@
+/* Spanning allows to merge grid cells into a single area */
+/* Any cells in contact can be merged into an area using grid line number */
+/* Intial line number is 1 in grid system. Whereas initial number is 0 in 2D Array coordinate system. */
+.container
+{
+	display: grid;
+	grid-gap: 5px;										/* Set both row and column spacing */
+
+	grid-template-columns: repeat(3, auto);				/* Creates 3 columns of equal widths */
+	/* Make 1st three rows with specified fraction */
+	grid-template-rows: 1fr 6fr 1fr;					/* Fraction is relative to total grid height */
+	grid-auto-rows: 3fr;								/* Set width for remaining unaffected rows */
+}
+.box
+{
+	text-align: center;
+	background-color: rgb(123, 176, 255);
+}
+.box:first-child
+{
+	background-color: red;
+	/* Specify columns to span */
+	grid-column-start: 1;			/* Span starting point set to 1 */
+	grid-column-end: 3;				/* Span ending point set to 3 */
+	/* Specify rows to span */
+	grid-row-start: 1;
+	grid-row-end: 3;
+	/* Specify 'start' and 'end' at same time */
+	grid-column: 2/4;				/* Column span starts from line number 2 and end on 4 */
+	grid-row: 2/4;					/* Row span starts from line number 2 and end on 4 */
+}
