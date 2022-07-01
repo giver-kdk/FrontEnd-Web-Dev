@@ -43,3 +43,9 @@ console.log(Number.NaN === NaN);		// False
 console.log(isNaN(NaN));				// True
 // Number.NaN is equivalent to NaN
 console.log(isNaN(Number.NaN));			// True
+
+
+let x = 2;
+let y = "2";
+console.log(x == y);
+console.log(x === y);
