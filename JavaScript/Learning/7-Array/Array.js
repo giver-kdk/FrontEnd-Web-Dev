@@ -4,6 +4,7 @@
 // We can create objects from 'Array' class by:
 let group = new Array;					// This is optional
 group = ["First", "Second", "Third", "Forth", "Fifth"];
+console.log(typeof(group));				// This displays 'object' since, 'group' is object of 'Array' class
 
 let people = ["Ram", "Shyam", "Hari", "Sita", "Gita"];
 let marks= [98, 70, 80, 76, 45];
