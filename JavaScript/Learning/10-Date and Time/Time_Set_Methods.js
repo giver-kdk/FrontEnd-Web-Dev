@@ -4,20 +4,20 @@ let date1 = new Date("07/8/2022, 09:45:30");
 console.log(date1.toLocaleString());
 
 // setTime() sets number of milliseconds from 01/01/1970 to required date & time
-date1.setTime(1657252830000);
-console.log(date1.getTime());
+date1.setTime(1651252830000);
+console.log(date1.toLocaleString());
 
 // setHour() sets hours as integer from 0-23
 date1.setHours(03);	
-console.log(date1.getHours());
+console.log(date1.toLocaleString());
 
 // setMinutes() sets hours as integer from 0-59
 date1.setMinutes(12);	
-console.log(date1.getMinutes());
+console.log(date1.toLocaleString());
 
 // setSecond() sets seconds as integer from 0-59
 date1.setSeconds(15);
-console.log(date1.getSeconds());
+console.log(date1.toLocaleString());
 
 // setMilliseconds() sets milliseconds as integer from 0-999
 date1.setMilliseconds(200);

@@ -2,11 +2,11 @@
 let a = 4.15;
 console.log("Rounded Number");
 console.log(Math.round(a));
-// Math.ceil() rounds up the decimal into smallest integer just greater or equal to number
+// Math.ceil() rounds up the decimal into smallest integer just greater or equal to decimal number
 let b = 4.15;
 console.log("Ceiled Number");
 console.log(Math.ceil(b));
-// Math.floor() rounds up the decimal into largest integer just smaller or equal to number
+// Math.floor() rounds up the decimal into largest integer just smaller or equal to decimal number
 let c = 4.15;
 console.log("Floored Number");
 console.log(Math.floor(c));

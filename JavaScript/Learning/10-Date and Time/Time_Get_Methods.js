@@ -20,7 +20,7 @@ console.log(hours);
 let minutes = date1.getMinutes();	
 console.log(minutes);
 
-// getSecond() returns seconds as integer from 0-59
+// getSeconds() returns seconds as integer from 0-59
 let seconds = date1.getSeconds();
 console.log(seconds);
 
