@@ -7,6 +7,7 @@
 // Accessing entire 'html' element
 let root = document.documentElement;
 console.log(root);
+console.log(typeof(root));		// HTML elements is an object
 
 // Accessing 'head' element
 let heading = document.head;

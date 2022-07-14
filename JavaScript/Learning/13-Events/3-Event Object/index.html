@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Event Object</title>
+	<style>
+		#btn1, #btn2
+		{
+			height: 50px;
+			width: 250px;
+			background-color: black;
+			color: white;
+			border-color: transparent;
+			border-radius: 5px;
+			font-size: medium;
+			font-weight: 600;
+		}
+		.container
+		{
+			height: 400px;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			justify-content: center;
+			align-items: center;
+		}
+		#box
+		{
+			font-family: "Arial";
+			font-size: large;
+			font-weight: 700;
+			text-align: center;
+			line-height: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">Event Object is the parent of all events. It contains all info about any type of event</div>
+	<div class="container">
+		<button id="btn1">Click Me (Old Method)</button>
+		<button id="btn2">Click Me (New Method)</button>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
+

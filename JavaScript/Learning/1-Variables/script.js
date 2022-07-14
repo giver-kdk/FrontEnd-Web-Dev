@@ -1,8 +1,12 @@
 // NOTE: If NodeJS is installed, simple press CTRL+ALT+N in VsCode to run code in terminal
 
 // Display Output on console
+var myVariable = 5;
 console.log("Hello World");
+// Show details explaination about data on browser console
+console.dir(myVariable);		
 // alert("This is an alert message");
+// confirm("Do you agree?");
 
 // Variables can be created using 'var', 'let' and 'const' keys
 // Data type is dynamically(automatically) set while creating variable
@@ -10,6 +14,7 @@ var username = "Giver Khadka";				// Create String
 var age = 19;								// Create Number
 // Redeclaration of 'var' variable is allowed
 var age = 20;
+
 
 // Generally 'let' is preferred
 let movieName = "Interstellar";

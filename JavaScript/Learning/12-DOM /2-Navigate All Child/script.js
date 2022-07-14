@@ -8,20 +8,20 @@ Syntax:
 */
 
 // Access child nodes
-let childrens = document.body.childNodes;
-console.log(childrens);			// All children node list will be shown
+let child = document.body.childNodes;
+console.log(child);			// All children node list will be shown
 
 
 
 
 // Access child elements
-let child = document.body.children;
-console.log(child);				// All children element list will be shown
+let childrenElement = document.body.children;
+console.log(childrenElement);				// All children element list will be shown
 // Since, there are multiple childrens. So, we can get their length too
 // Individual element access is done using [] 
-for(let i = 0; i < child.length; i++)
+for(let i = 0; i < childrenElement.length; i++)
 {
-	console.log(child[i]);
+	console.log(childrenElement[i]);
 }
 
 
@@ -43,10 +43,10 @@ else
 
 
 // Check whether an element has child element or not (Excluding free text)
-let Children = document.body.firstElementChild;
+let children1 = document.body.firstElementChild;
 // 'firstElementChild' returns actual HTML element of first child element if exist, else returns 'null' falsy value
-console.log(Children);
-if(Children)
+console.log(children1);
+if(children1)
 {
 	console.log("There is atleast one child");
 }

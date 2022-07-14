@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Event Writing with Inline Alert</title>
+	<style>
+		#btn
+		{
+			height: 50px;
+			width: 150px;
+			background-color: black;
+			color: white;
+			border-color: transparent;
+			border-radius: 5px;
+			font-size: medium;
+			font-weight: 600;
+		}
+		.container
+		{
+			height: 400px;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		#box
+		{
+			font-family: "Arial";
+			font-size: large;
+			font-weight: 700;
+			text-align: center;
+			line-height: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">Event Writing using inline alert</div>
+	<div class="container">
+		<!-- Here, 'onclick' is a mouse click event. We call alert() with some message here -->
+		<button id="btn" onclick="alert('You Clicked a Button')">Click Me</button>
+	</div>
+</body>
+</html>
+
