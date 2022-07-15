@@ -21,10 +21,21 @@ let movieName = "Interstellar";
 let rating = 5;
 // Redeclaration of 'let' variable is not allowed
 // let rating = 4;
-debugger;
 // 'const'  is used to create constant variables
 const gravity = 10;
 // gravity = 20;							// Generates error since constant variable can't be modified 
+
+
+
+function myFunction()
+{
+	// The varibale created without 'var', 'let' or 'const' becomes global variable
+	money = 20000;
+	console.log(money);
+}
+// console.log(money);						// This will not run cause, 'money' is not created yet
+myFunction();								// 'money' is created when the function is called
+console.log(money);
 
 // Here, '+' sign concatinates tw0 strings
 console.log("User Name is: " + username);
