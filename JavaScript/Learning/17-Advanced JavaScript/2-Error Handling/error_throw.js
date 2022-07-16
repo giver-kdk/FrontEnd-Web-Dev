@@ -5,7 +5,7 @@ we can create our own error and 'throw' to 'catch'
 */
 
 // let errorObject = new Error(message);
-let zeroDivide = new Error("Divide by zero error!!!");
+let zeroDivide = new Error("Divide by zero error!!");
 
 function divider(a, b)
 {
