@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Light Bulb</title>
+	<style>
+		.container
+		{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			gap: 10px;
+			border: transparent;
+		}
+		#buttons
+		{
+			display: flex;
+			gap: 100px;
+		}
+		.btn
+		{
+			height: 40px;
+			width: 100px;
+			background-color: orange;
+			border-color: transparent;
+			border-radius: 5px;
+			font-size: large;
+			filter: drop-shadow(0px 0px 5px rgb(179, 159, 130));
+
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img src="img/Eye2.jpg" alt="Normal Eyes" id="eyes">
+		<div id="buttons">
+			<button class="btn" id="btn1" onclick="saringan()">Sharingan</button>
+			<button class="btn" id="btn2" onclick="normal()">Normal</button>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

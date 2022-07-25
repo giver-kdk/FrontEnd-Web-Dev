@@ -2,6 +2,7 @@
 // This method runs a userdefined function for each of all the elements
 // The loop from this method is unstoppable. So, using 'break' is not valid
 // The function to be executed have element, index and array itself as parameters
+// NOTE: The loop runs for all elements simlutaneouly
 let numbers = [5, 6, 7, 8, 9];
 let people = ["Ram", "Shyam", "Hari", "Sita","Gita"];
 function display(element, index, array)

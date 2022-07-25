@@ -11,11 +11,15 @@ function detect_key(eventObj)
 {
 	console.log(`You pressed ${eventObj.key} and its code is ${eventObj.code}`);
 }
-function say_down()
+function say_down(eventObj)
 {
 	console.log(`Key is pressed down`);
+	console.log(`You pressed ${eventObj.key} and its code is ${eventObj.code}`);
+	console.log(`The key code is ${eventObj.keyCode}`);
 }
-function say_up()
+function say_up(eventObj)
 {
 	console.log(`Key is left up`);
+	console.log(`You pressed ${eventObj.key} and its code is ${eventObj.code}`);
+	console.log(`The key code is ${eventObj.keyCode}`);
 }

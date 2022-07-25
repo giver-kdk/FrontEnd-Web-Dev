@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Visit Mars</title>
+	<style>
+		*
+		{
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		body
+		{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.container
+		{
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			gap: 10px;
+			transition: all 0.1s cubic-bezier(0.47, 0, 0.745, 0.715);
+		}
+		.bar
+		{
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			height: 25px;
+			width: 200px;
+			border: 1px solid orange;
+			border-radius: 50px;
+		}
+		.progress
+		{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 0;
+			height: 0;
+			z-index: 2;
+			margin: 5px;
+			border-radius: 7px;
+			z-index: 2;
+			background-color: orange;
+			
+		}
+		.welcome
+		{
+			height: 100px;
+			width: 400px;
+			text-align: center;
+			font-size: 32px;
+			font-family: "Ubuntu";
+			font-weight: 700;
+			color: rgb(255, 130, 47);
+			background-color: white;
+			border-radius: 7px;
+			border-color: transparent;
+			margin-top: 200px;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<button class="welcome">
+		Welcome to Mars
+	</button>
+	<div class="container">
+		<p style="color: #45dd6f; font-size: 21px; font-family: 'Ubuntu'; font-weight: 700;">Loading...</p>
+		<div class="bar">
+			<div class="progress">
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

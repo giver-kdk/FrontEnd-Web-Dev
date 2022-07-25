@@ -1,4 +1,4 @@
-// Function passed to another function as a parameter is a callback function
+// Function passed to another function as a argument is a callback function
 // Function taking 'callback' function as parameter is Higher Order function
 
 /*

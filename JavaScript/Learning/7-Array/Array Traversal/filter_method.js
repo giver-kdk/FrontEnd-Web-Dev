@@ -4,6 +4,7 @@
 // The newly created array have have different size than original array
 // But, the new array elements can't be different from original array(Since, new array is just selected from original one)
 
+
 let numbers = [5, 6, 7, 8, 9];
 function test(element, index, array)
 {

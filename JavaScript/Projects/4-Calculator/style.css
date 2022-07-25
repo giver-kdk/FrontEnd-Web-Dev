@@ -1,0 +1,161 @@
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:root
+{
+	--key--text: rgb(94, 94, 94);
+	--key-color: grey;
+	--display-color: rgb(231, 231, 231);
+	--bg-color: rgb(231, 231, 231);
+	--bg-color-light: rgb(241, 241, 241);
+	--bg-color-dark: rgb(209, 209, 209);
+	--shadow-color: rgb(184, 184, 184);
+	--action-key-color: rgb(255, 212, 131);
+}
+/* Outer frame styling */
+.frame
+{
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--bg-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.inner__frame
+{
+	width: 400px;
+	height: 500px;
+	background-color: white;
+	border-radius: 7px;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	justify-content: space-between;
+	align-items: center;
+	/* border: 5px solid; */
+	filter: drop-shadow(10px 15px 10px var(--shadow-color));
+}
+/* Display Styling */
+.display
+{
+	width: 100%;
+	height: 130px;
+	background-color: var(--display-color);
+	border-radius: 5px;
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	filter: drop-shadow(2px 2px 2px var(--shadow-color));
+}
+#user__input
+{
+	width: 100%;
+	height: 40%;
+	/* border-bottom: 2px solid var(--bg-color-dark); */
+	padding: 5px;
+	font-family: 'Ubuntu';
+	font-size: medium;
+	font-weight: 500;
+	color: var(--key--text);
+	overflow: hidden;
+}
+#final__result
+{
+	width: 100%;
+	height: 60%;
+	/* border: 2px solid lightgreen; */
+	padding: 5px;
+	font-family: 'Ubuntu';
+	font-size: xx-large;
+	font-weight: 500;
+	color: var(--key--text);
+	overflow: hidden;
+	text-align: right;
+}
+/* Keypads styling */
+.keypad
+{
+	width:100%;
+	height: 100%;
+	border-radius: 5px;
+	/* border: 2px solid grey; */
+	display: grid;
+	filter: drop-shadow(2px 2px 2px var(--shadow-color));
+	grid-template-areas: 
+	'open_bracket		closed_bracket		root			delete					clear'
+	'seven				eight				nine			multiplication			division'					
+	'four				five				six				plus					minus'
+	'one				two					three			result					result'	
+	'zero-key			point				previous_answer	result					result'	
+	;				
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 10px;
+	
+}
+#zero-key{grid-area: zero-key;}
+#one{grid-area: one;}
+#two{grid-area: two;}
+#three{grid-area: three;}
+#four{grid-area: four;}
+#five{grid-area: five;}
+#six{grid-area: six;}
+#seven{grid-area: seven;}
+#eight{grid-area: eight;}
+#nine{grid-area: nine;}
+
+#plus{grid-area: plus;}
+#minus{grid-area: minus;}
+#multiplication{grid-area: multiplication;}
+#division{grid-area: division;}
+#open_bracket{grid-area: open_bracket;}
+#closed_bracket{grid-area: closed_bracket;}
+#root{grid-area: root;}
+#point{grid-area: point;}
+
+#delete{grid-area: delete;}
+#clear{grid-area: clear;}
+#previous_answer{grid-area: previous_answer;}
+#result{grid-area: result;}
+
+.key
+{
+	width: 100%;
+	height: 100%;
+	background-color: var(--bg-color);
+	border:transparent;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Ubuntu';
+	font-size: 19px;
+	font-weight: 600;
+	color: var(--key--text);
+	transition: all 0.1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.key:hover
+{
+	cursor: pointer;
+}
+.key:active
+{
+	background-color: var(--bg-color-light);
+}
+
+#result, #delete, #clear
+{
+	background-color: var(--action-key-color);
+}
+#result:active, #delete:active, #clear:active
+{
+	background-color: var(--bg-color-light);
+}

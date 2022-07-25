@@ -4,6 +4,8 @@
 // The original array is not modified by map()
 // The newly created array has same size as original array
 // The new array elements can be different from original array
+// NOTE: The loop runs for all elements simlutaneouly
+
 let numbers = [2, 3, 4, 5, 6];
 function twice(element, index, array)
 {
