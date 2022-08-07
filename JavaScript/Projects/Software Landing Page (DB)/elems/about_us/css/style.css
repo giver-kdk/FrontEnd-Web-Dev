@@ -1,0 +1,347 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+:root {
+	/* --dark-color: rgb(30, 35, 46); */
+	/* --dark-color: #0A0A0A; */
+	/* --dark-color: #22303C; */
+	--extreme-dark-color: #12151b;
+	--dark-color: #192734;
+	--primary-color: #29A19C;
+	--secondary-color: #BC5021;
+	--body-font-family: 'Open Sans', sans-serif;
+	--heading-font-family: 'Poppins', sans-serif;
+}
+
+body {
+	color: white;
+	background-color: var(--dark-color);
+}
+/* Home Page Styling */
+.home__section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.header__main {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+	/* border: 2px solid red; */
+	width: 100%;
+}
+
+.header__main--left a {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	/* border: 2px solid red; */
+	margin-top: 10px;
+}
+
+.header__main--left a img {
+	height: 70px;
+	width: 70px;
+	border-radius: 50px;
+}
+
+.header__main--left a p {
+	color: black;
+	font-family: var(--heading-font-family);
+	color: var(--primary-color);
+	font-weight: 600;
+	font-size: 21px;
+	margin-left: 10px;
+}
+.bar__menu
+{
+	display: none;
+	filter: invert(0.7);
+}
+.header__main--right ul {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	/* border: 2px solid red; */
+	justify-content: space-evenly;
+	list-style: none;
+}
+.header__main--right ul li
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 150px;
+	height: 55px;
+	/* border: 2px solid red; */
+}
+.header__main--right li{
+	overflow: visible;
+}
+
+.header__main--right li a {
+
+	text-align: center;
+	text-decoration: none;
+	font-family: var(--heading-font-family);
+	color: white;
+	/* border: 2px solid red; */
+	/* background-color: #039bab; */
+	padding: 10px;
+	overflow: visible;
+	font-size: 17px;
+	font-weight: 500;
+	width: 145px;
+	height: 50px;
+	/* border: 2px solid red; */
+	/* transition: all 0.2s ease-in-out; */
+}
+.header__main--right li .about__us
+{
+	background-image: url('../../img/icons/parallelogram_shape.svg');
+	background-position: center;
+	background-size: 140px;
+	background-repeat: no-repeat;
+}
+
+.header__main--right li a:hover {
+	color: white;
+	background-image: url('../../img/icons/parallelogram_shape.svg');
+	/* background-image: linear-gradient(red, blue); */
+	background-position: center;
+	background-size: 140px;
+	background-repeat: no-repeat;
+	transition: opacity 0.2s ease-in-out;
+
+}
+
+/* About Us Section */
+.section
+{
+	background-color: var(--primary-color);
+	color:rgba(255, 255, 255, 0.897);
+	width:100%;
+	height:auto;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 100px;
+	justify-content: center;
+	align-items: center;
+	padding: 70px 0;
+}
+
+.left-section h2
+{
+	text-align: center;
+	font-family: var(--heading-font-family);
+	font-size: 50px;
+	font-weight: 600;
+	line-height: 60px;
+}
+
+.left-section
+{
+	width:40%;
+}
+
+.left-section p
+{
+	font-family: var(--body-font-family);
+	font-size: 21px;
+	font-weight: 400;
+	line-height: 25px;
+	text-align: center;
+}
+
+.right-section img
+{
+	width:400px;
+	border-radius: 20px;
+	filter: drop-shadow(0px 0px 10px rgb(43, 43, 43));
+}
+
+.profile
+{
+	padding-top: 45px;
+	/* border: 2px solid red; */
+	width: 100%;
+    height: 525px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    color: azure;
+}
+.profile-text
+{
+	/* Gradient in text CSS */
+	background: linear-gradient(91.04deg,#cb5eee 40.5%,#1dd2d2 99.81%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+}
+.profile h2, .works h2
+{
+	text-align: center;
+	font-size:40px;
+	text-align: center;
+	font-family: var(--heading-font-family);
+	font-size: 50px;
+	font-weight: 600;
+	line-height: 60px;
+}
+
+.blocks
+{
+	display: flex;
+	width: 80%;
+	justify-content: center;
+	align-items: center;
+	padding-top:30px;
+	text-align:center;
+
+	/* color:rgb(194, 194, 194); */
+}
+
+.profile-1, .profile-2, .profile-3, .profile-4
+{
+	width:350px;
+	height:350px;
+	padding-top:20px;
+	padding-bottom:10px;
+	margin-right:20px;
+	transition: all 0.2s ease-in-out;
+}
+
+.profile-1:hover, .profile-2:hover, .profile-3:hover, .profile-4:hover
+{
+	transform: scale(1.1);
+	border-radius: 10px;
+}
+
+.profile-1 img, .profile-2 img, .profile-3 img, .profile-4 img
+{
+	border-radius:50%;
+	padding-bottom:25px;
+	width: 150px;
+}
+
+.profile-1 h3,  .profile-2 h3, .profile-3 h3, .profile-4 h3
+{
+	
+	margin: auto;
+	font-size:18px;
+	text-align:center;
+	font-family: var(--body-font-family);
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 20px;
+	/* color:#A0A0A0; */
+}
+
+.profile-1 h4,  .profile-2 h4, .profile-3 h4, .profile-4 h4
+{
+	/* text-align: center; */
+	margin: auto;
+	font-size:16px;
+	text-align:center;
+	font-family: var(--body-font-family);
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 25px;
+	/* color:#B0B0B0; */
+}
+
+/* Footer Section Styling */
+footer {
+	margin-top: 50px;
+	height: auto;
+	padding: 20px;
+	background-color: #12141b;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+footer p {
+	font-family: "Open-Sans", sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.legal__policy {
+	list-style: none;
+	width: 80%;
+	display: flex;
+	/* flex-wrap: wrap; */
+	align-items: center;
+	gap: 10px;
+	/* border: 2px solid red; */
+	justify-content: space-between;
+}
+
+.legal__policy a {
+	color: azure;
+	text-decoration: none;
+	font-family: "Poppins", sans-serif;
+	font-size: 13px;
+	font-weight: 300;
+}
+
+.policies {
+	display: flex;
+	gap: 50px;
+	list-style: none;
+}
+
+.socials {
+	display: flex;
+	gap: 10px;
+	list-style: none;
+}
+
+.socials img {
+	width: 24px;
+	filter: invert(1);
+	transition: all 0.2s ease-in-out;
+}
+
+.socials img:hover {
+	animation-name: shake;
+	animation-duration: 0.4s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+	filter: invert(1) drop-shadow(0px 0px 10px #14f6be);
+}
+
+@keyframes shake {
+	from {
+		transform: scale(1) rotate(0deg);
+	}
+
+	40% {
+		transform: scale(1.1) rotate(-30deg);
+	}
+
+	80% {
+		transform: scale(1.1) rotate(30deg);
+	}
+
+	to {
+		transform: scale(1.1) rotate(0deg);
+	}
+}

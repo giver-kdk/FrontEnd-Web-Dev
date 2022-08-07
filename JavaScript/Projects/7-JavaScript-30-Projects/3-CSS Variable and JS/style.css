@@ -1,0 +1,12 @@
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:root
+{
+	--spacing: 0px;
+	--blur-level: 0px;
+	--color: #36dfc8;
+}

@@ -1,0 +1,79 @@
+.header__main--left a {
+	margin-top: 5px;
+}
+
+.header__main--left a img {
+	height: 50px;
+	width: 50px;
+}
+
+.header__main--left a p {
+	font-size: 17px;
+}
+
+.bar__menu
+{
+	display: block;
+}
+
+.header__main--right ul li
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 150px;
+	height: 55px;
+	/* border: 2px solid red; */
+}
+.header__main--right
+{
+	display: none;
+	transition: all 0.2s ease-in-out;
+}
+.show__navbar
+{
+	display: flex;
+}
+
+
+
+
+/* Doc Section */
+#main-doc
+{
+	margin: 20px;
+	width: 90%;
+}
+#navbar
+{
+	position:static;
+	float: none;
+	justify-content: flex-start;
+	margin: 10px;
+}
+.nav
+{
+	display: block;
+}
+
+/* Footer Styling */
+footer p {
+	font-family: "Open-Sans", sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.legal__policy {
+	width: 100%;
+	flex-direction: column;
+}
+
+.legal__policy a {
+	padding: 0 10px;
+}
+.policies {
+	display: flex;
+	list-style: none;
+	/* border: 2px solid red; */
+	gap: 0px;
+}

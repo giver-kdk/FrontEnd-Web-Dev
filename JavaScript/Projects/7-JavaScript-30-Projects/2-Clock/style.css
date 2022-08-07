@@ -1,0 +1,47 @@
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.container
+{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.frame
+{
+	height: 25vw;
+	width: 25vw;
+	border-radius: 20%;
+	background-image: url('Analog_Clock.png');
+	background-position: center;
+	background-size: cover;
+}
+.needle
+{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	border: 1px solid rgb(59, 59, 59);
+	background-color: rgb(59, 59, 59);
+	width: 9%;
+	border-radius: 50px;
+	transform-origin: 0%;
+	transform: rotate(0deg);
+}
+.hour
+{
+	width: 5%;
+}
+.minute
+{
+	width: 7%;
+}
+.second
+{
+	border-color: red;
+	background-color: red;
+}

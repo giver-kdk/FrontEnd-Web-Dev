@@ -38,7 +38,8 @@
 		background-color: lightsalmon;
 	}
 }
-@media only screen and (min-width: 1280px)
+/* CSS is apploed when screen width >= 1280px */
+@media only screen and (min-width: 1280px) and (max-width: 1920px)
 {
 	#box4
 	{
