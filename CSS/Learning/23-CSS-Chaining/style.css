@@ -1,0 +1,32 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+}
+.box
+{
+    background-color: pink;
+}
+/* Here, CSS is applied to the only element that contains all mentioned classes or more */
+/* If atleast one of the class is not present, then style is not applied */
+/* This is called selectors chaining */
+.box.first.big
+{
+    background-color: lightgreen;
+}
+/* Here, CSS is applied to only element which have mentioned id and classes or more */
+#final.box.last.small
+{
+    background-color: lightblue;
+}
