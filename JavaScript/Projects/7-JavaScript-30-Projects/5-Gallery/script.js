@@ -14,9 +14,11 @@ function show_text(eventObject)
 	if(transition.includes("flex"))
 	{
 		// eventObject.target.firstChildElement.classList.toggle("opened");
-		let child = eventObject.target;
-		child.firstChildElement;
-		console.log(child.firstChildElement);
+		let first = eventObject.target.firstElementChild;
+		let last = eventObject.target.lastElementChild;
+		first.classList.toggle("opened");
+		last.classList.toggle("opened");
+
 	}
 }
 

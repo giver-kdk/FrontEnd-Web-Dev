@@ -27,10 +27,10 @@
 	align-items: center;
 	font-family: fantasy;
 	color: azure;
-	font-size: x-large;
+	font-size: xx-large;
 	background-size: cover;
 	background-position: center;
-	transition: font-size 0.4s ease-out, flex-grow 0.4s cubic-bezier(0.61,-0.19, 0.7,-0.11);
+	transition: flex-grow 0.4s cubic-bezier(0.61,-0.19, 0.7,-0.11);
 }
 .block p, .block h3
 {
@@ -40,7 +40,6 @@
 .block.clicked
 {
 	flex-grow: 5;
-	font-size: xx-large;
 }
 .block *:first-child
 {
@@ -52,7 +51,7 @@
 	transform: translateY(150px);
 	transition: all 0.4s ease-in-out;
 }
-.opened
+.opened 
 {
-	transform: translateY(0px);
+	transform: translateY(0px) !important;
 }
