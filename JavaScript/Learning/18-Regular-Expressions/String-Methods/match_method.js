@@ -6,8 +6,9 @@
 // We can either use fixed string or regular expression as it's arguments
 
 
-let reg = new RegExp("giver", "g");
-let string = "My name is giver khadka. I am a giver.";
+let reg = new RegExp("giver", "gi");
+let string = "My name is Giver khadka. I am a giver.";
 
 let result = string.match(reg);
 console.log(result);
+
