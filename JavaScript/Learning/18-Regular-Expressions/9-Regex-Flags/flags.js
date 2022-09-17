@@ -14,12 +14,12 @@ console.log();
 
 // Case-Insensitive  Flag( i )
 // It indicates to search pattern by ignoring Uppercase or Lowercase in string 
-reg = /giver/i;
-string = "I am giver";
+reg = /giver/;
+string = "I am Giver";
+
 console.log("Case-Insensitive Flag");
 console.log(string.match(reg));					// Matches Lowercase as well
-
-string = "I am Giver";
+reg = /giver/i;
 console.log(string.match(reg));					// Matches Uppercase as well
 console.log();
 
@@ -62,7 +62,6 @@ console.log();
 // But, with "y", the match should be found when searching just begins. If not found then, search fails
 // It has higher priority than global flag( g )
 reg = /giver/;
-// Selection is done if there is any character except new-line after "giver"
 string = "I am giver";		
 console.log("Sticky Search Flag");
 console.log(string.match(reg));					// "giver" is searched until found. So, selected

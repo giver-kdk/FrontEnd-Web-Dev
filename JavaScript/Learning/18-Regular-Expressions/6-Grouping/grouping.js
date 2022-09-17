@@ -17,6 +17,7 @@ console.log();
 // Mixed 
 // Any regex expression can be grouped to form desired expression
 reg = /g(iv){0,2}e([a-z]r){2}/;					// "iv" should occur 0, 1 or 2 times and "[a-z]r" should occur 2 times
+reg = /g(iv){0,2}e([a-z]){2}/;					// "iv" should occur 0, 1 or 2 times and "[a-z]r" should occur 2 times
 str1 = "I am giveerer";							// Selected
 str2 = "I am givivearar";						// Selected
 str3 = "I am givear";							// Here, "ar" has occur 1 time. So, not selected

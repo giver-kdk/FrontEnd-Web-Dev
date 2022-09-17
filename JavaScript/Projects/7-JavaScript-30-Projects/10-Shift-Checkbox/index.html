@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<form action="#">
+			<div class="option">
+				<input id="one" type="checkbox">
+				<label for="one">Option One</label>
+			</div>
+			<div class="option">
+				<input id="two" type="checkbox">
+				<label for="two">Option Two</label>
+			</div>
+			<div class="option">
+				<input id="three" type="checkbox">
+				<label for="three">Option Three</label>
+			</div>
+			<div class="option">
+				<input id="four" type="checkbox">
+				<label for="four">Option Four</label>
+			</div>
+			<div class="option">
+				<input id="five" type="checkbox">
+				<label for="five">Option Five</label>
+			</div>
+			<div class="option">
+				<input id="six" type="checkbox">
+				<label for="six">Option Six</label>
+			</div>
+
+			<script>
+				const checkboxes = document.querySelectorAll(".option input[type=\"checkbox\"]");
+				let previousCheck;
+				let multiCheck;
+				function do_checking(e)
+				{
+					multicheck = false;
+					if(e.shiftKey && this.checked)
+					{
+						checkboxes.forEach((checkbox) =>
+						{
+							if(checkbox === previousCheck || checkbox === this) 
+								multiCheck = !multiCheck;
+							if(multiCheck) 
+								checkbox.checked = true;
+						});
+					}
+					// previousCheck = e.target;
+					previousCheck = this;
+				}
+				checkboxes.forEach((checkbox) => checkbox.addEventListener("click", do_checking));
+
+				</script>
+		</form>
+	</div>
+</body>
+</html>

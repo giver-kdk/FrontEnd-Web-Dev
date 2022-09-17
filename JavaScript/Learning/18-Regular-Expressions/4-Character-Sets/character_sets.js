@@ -1,4 +1,4 @@
-// Use [] to include character set that is allowed to select
+// Use [] to include character set 
 
 // Specific
 let reg = /giv[aei]r/;					// Any one character: a, e or i is allowed in place of [aei]
