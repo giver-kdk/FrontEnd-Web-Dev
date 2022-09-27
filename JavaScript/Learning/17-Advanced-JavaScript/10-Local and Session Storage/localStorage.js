@@ -15,7 +15,7 @@ localStorage.setItem("age", 19);
 localStorage.setItem("roll", 05);			
 
 // Accessing Data
-console.log( localStorage["name"] );	// Uer 'key' to acces 'value'
+console.log( localStorage["name"] );	// Use 'key' to acces 'value'
 console.log( localStorage.name );
 console.log( localStorage.age );
 
