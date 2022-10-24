@@ -22,13 +22,13 @@ function diagonal(matrix)
 				{
 					if(array[i][j] != 0)
 					{
-						return "It is not a square matrix";
+						return "It is not a diagonal matrix";
 					}
 				}
 
 			}
 		}
-		return "It is a square matrix";
+		return "It is a diagonal matrix";
 	}
 }
 console.log(diagonal(array));

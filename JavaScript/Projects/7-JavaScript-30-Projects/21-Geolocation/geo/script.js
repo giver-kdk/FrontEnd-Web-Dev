@@ -20,8 +20,11 @@ function handle(err)
 // Third parameter is an object mentioning:
 // - "timeout" which sets minimum time(milliseconds) for data update. Basically it sets frequency of data fetch
 // - "enableHighAccuracy" which gives more accurate data if set to "true"
-navigator.geolocation.watchPosition(update, handle, {
+let id = navigator.geolocation.watchPosition(update, handle, {
 	timeout: 100,
 	enableHighAccuracy: false
 });
 
+
+// Use "clearWatch()" to stop using "watchPosition()"
+// navigator.geolocation.clearWatch(id);
