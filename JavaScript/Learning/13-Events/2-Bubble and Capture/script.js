@@ -6,12 +6,14 @@ let element4 = document.getElementById("box2");
 
 // Bubble Method(Default)
 // Here, the inner element's event response will occur first, then outer
-element1.addEventListener("click", printOuter, false);
+// Here, "capture: false" is same as "element2" event listener
+// And, "once: false" only allows event listener to run once throughout the program
+element1.addEventListener("click", printOuter, {capture: false, once: false});
 element2.addEventListener("click", printInner, false);
 
 // Capture Method(useCapture)
 // Here, the outer element's event response will occur first, then inner
-element3.addEventListener("click", printOuter, true);
+element3.addEventListener("click", printOuter, {capture: true});
 element4.addEventListener("click", printInner, true);
 
 function printOuter()
