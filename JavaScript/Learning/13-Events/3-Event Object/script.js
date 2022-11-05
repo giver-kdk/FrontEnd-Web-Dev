@@ -23,7 +23,11 @@ function showDetail(eventObject)
 	// 'event' is a pre-defined window object containing event info
 	console.log(eventObject);
 	// Sub-info of the 'Event' object
-	console.log(eventObject.target);			// The HTML element which is targeted
+	// HTML Element where the event listener was set
+	// "eventObject.currentTarget" is equivalent to "this"
+	console.log(eventObject.currentTarget);				
+	// HTML Elementr that triggered the event
+	console.log(eventObject.target);			
 	console.log(eventObject.type);				// Type of event occurred
 	// Return 'id' of element that fired the event
 	console.log(eventObject.target.id);
