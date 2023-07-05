@@ -49,3 +49,32 @@ tell();
 // Which means we made a function expression
 let talk = sender();
 talk();
+
+
+
+function one(n)
+{
+	console.log("One", n);
+}
+function two(n)
+{
+	console.log("Two", n);
+}
+
+function num(value)
+{
+	let number = function findNum()
+	{
+		switch(value)
+		{
+			case 1:
+				return one(value);
+			case 2: 
+				return two(value);
+			default:
+				console.log("Invalid");
+		}
+	}
+	number();
+}
+num(1);

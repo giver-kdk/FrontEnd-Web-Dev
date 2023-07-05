@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Understanding JavaScript's Capture</title>
+</head>
+<body class="bod">
+
+  <div class="one layer">
+    <div class="two layer">
+      <div class="three layer">
+      </div>
+    </div>
+  </div>
+
+<style>
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after { 
+    box-sizing: inherit; 
+  }
+
+  div {
+    width: 100%;
+    padding: 100px;
+  }
+
+  .one {
+    background: purple;
+  }
+
+  .two {
+    background: pink;
+  }
+
+  .three {
+    background: orange;
+  }
+</style>
+
+<button></button>
+<script>
+	// Code to demonstrate event bubble and capturing
+	// let layers = document.querySelectorAll(".layer");
+	// let one = document.querySelector(".one").addEventListener("click", handleOne);
+	// let two = document.querySelector(".two").addEventListener("click", handleTwo);
+	// let three = document.querySelector(".three").addEventListener("click", handleThree);
+	let one = document.querySelector(".one").addEventListener("click", handleOne, true);
+	let two = document.querySelector(".two").addEventListener("click", handleTwo, true);
+	let three = document.querySelector(".three").addEventListener("click", handleThree, true);
+	function handleOne()
+	{
+		console.log("Button One Clicked!!!");
+	}
+	function handleTwo()
+	{
+		console.log("Button Two Clicked!!!");
+	}
+	function handleThree()
+	{
+		console.log("Button Three Clicked!!!");
+	}
+
+</script>
+</body>
+</html>

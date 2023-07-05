@@ -24,8 +24,8 @@ $count = mysqli_num_rows($result);
 if ($count>0){
 	echo '<script type="text/javascript">
 	window.onload = function () { alert("user already signed up"); } 
-</script>'; 
-    die
+		</script>'; 
+    die;
 }
 else{
 
