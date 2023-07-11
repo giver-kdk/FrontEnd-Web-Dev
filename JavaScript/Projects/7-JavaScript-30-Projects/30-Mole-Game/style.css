@@ -4,6 +4,10 @@
 	margin: 0;
 	padding: 0;
 }
+body
+{
+	background: linear-gradient(#59b200, #68d000);
+}
 .container
 {
 	height: 100vh;
@@ -24,7 +28,7 @@
 }
 .time__left
 {
-	color: green;
+	color: yellow;
 }
 .game__field
 {
