@@ -70,3 +70,7 @@ for(let i = 0; i < element8.length; i++)
 }
 
 
+ // Selecting form elements like array for ease
+let myName = document.forms["myForm"]["fName"].value;
+console.log(myName);
+
