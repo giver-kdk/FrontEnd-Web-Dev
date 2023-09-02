@@ -8,6 +8,9 @@ body
 {
 	background-color: #f1f1f1;
 	color: azure;
+	background-image: url('./bg.jpg');
+	background-size: cover;
+	background-position: 0px -100px;
 }
 .container
 {
