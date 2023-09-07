@@ -13,6 +13,14 @@ let myObject1 =
 
 let myJSON1 = JSON.stringify(myObject1);			// 'stringify()' converts object into JSON string
 console.log(myJSON1);
+// Actual JSON contains key as string and looks like: 
+let json = 
+{
+	"myName": "Giver Khadka",
+	"age": 19,
+	"roll": 05,
+	"section": "A"
+}
 
 // JSON string to 'Object' conversion
 let myObject2 = JSON.parse(myJSON1);
