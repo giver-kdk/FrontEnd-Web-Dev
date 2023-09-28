@@ -4,7 +4,7 @@ let element2 = document.getElementById("btn2");
 element1.addEventListener("mousedown", set_red);
 element1.addEventListener("mouseup", set_green);
 
-element2.addEventListener("mouseenter", set_blue);
+element2.addEventListener("mouseover", set_blue);
 element2.addEventListener("mouseleave", set_orange);
 
 function set_red()

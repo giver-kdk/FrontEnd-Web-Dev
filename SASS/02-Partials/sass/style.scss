@@ -1,0 +1,14 @@
+// Import the partial from "globals" folder just like exporting
+// The styles exported by "_index.scss" of "globals" wil be copy pasted here
+@forward 'globals';			
+
+h1
+{
+	padding: 1rem;
+	background-color: yellow;
+}
+p
+{
+	padding: 1rem;
+	background-color: orange;
+}

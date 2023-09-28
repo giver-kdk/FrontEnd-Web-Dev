@@ -7,7 +7,7 @@ let myObject1 =
 {
 	myName: "Giver Khadka",
 	age: 19,
-	roll: 05,
+	roll: 5,
 	section: "A"
 }
 
@@ -18,7 +18,7 @@ let json =
 {
 	"myName": "Giver Khadka",
 	"age": 19,
-	"roll": 05,
+	"roll": 5,
 	"section": "A"
 }
 
