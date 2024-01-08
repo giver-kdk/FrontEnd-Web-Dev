@@ -1,1 +1,0 @@
-Generate a caption for an ICT club for 30 days coding challenge where we explain how to detect anagram strings in JS. Mention the logic behing it as well.
