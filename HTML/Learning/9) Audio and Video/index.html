@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Inserting Audio Video</title>
+</head>
+<body>
+	<h1>Audio Section</h1>
+	<!-- 'autoplay' plays sound automatically when page loads -->
+	<audio autoplay> 
+		<!-- 'src' contains audio path/file name -->
+		<!-- 'type' specifies audio format -->
+		<source src="helloUser.mp3" type="audio/mpeg">
+	</audio>
+	<!-- 'controls' shows visual panels for play, pause, mute, volume, speed, etc.-->
+	<audio controls autoplay muted>
+		<source src="Rauf Faik - детство (Official audio).mp3" type="audio/mpeg">
+	</audio>
+	<!-- 'muted' sets default audio state to mute -->
+	<!-- 'loop' repeatedly plays the audio -->
+	<audio controls autoplay muted loop>
+		<source src="Alan Walker - Faded (Lyrics).mp3" type="audio/mpeg">
+		<!-- This message only shows up when 'audio' tag is actually not supported -->
+		Audio is not Supported in your Browser
+	</audio>
+	<br>
+	<h1>Video Section</h1>
+	<!-- Similar attributes like 'audio' tag -->
+	<video controls autoplay loop>
+		<source src="24kGoldn - Mood ft. Iann Dior (Cover by Napsnick).mp4" type="video/mp4">
+		<!-- This message only shows up when 'video' tag is actually not supported -->
+		Video is not Supported in your Browser  
+	</video>
+	<h1>Youtube Video Section</h1>
+	<!-- 'mute', 'autoplay', 'loop', 'controls' have boolean value (1 or 0) for being applied -->
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/AEmosm2bfTI" mute=1 autoplay=1 loop=1 controls=1 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

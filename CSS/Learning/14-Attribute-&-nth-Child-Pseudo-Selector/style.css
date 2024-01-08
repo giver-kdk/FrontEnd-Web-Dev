@@ -1,0 +1,78 @@
+*
+{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+.box
+{
+	display: block;
+	margin: 20px;
+}
+.lists
+{
+	margin: 20px;
+}
+a
+{
+	display: block;
+	margin: 20px;
+}
+/* Selection of element according to attribute and its value */
+input[type="text"]
+{
+	width: 200px;
+	height: 40px;
+	border: 1px solid grey;
+	border-radius: 5px;
+	background-color: rgb(200, 213, 228);
+}
+input[type="email"]
+{
+	width: 300px;
+	height: 40px;
+	border: 1px solid grey;
+	border-radius: 5px;
+	background-color: rgb(233, 194, 194);
+}
+a
+{
+	color:rgb(255, 0, 242);
+}
+/* Selection of element according to attribute name only */
+a[target]
+{
+	text-decoration: none;
+}
+/* Selection of element according to attribute and its value */
+a[target="_blank"]
+{
+	color: red;
+}
+a[target="_self"]
+{
+	color: green;
+}
+/* Selecting the specific childs of 'li' list */
+li:nth-child(2n)
+{
+	width: 50px;
+	border: 1px solid rgb(255, 0, 242);
+}
+/* Above '2n' can be replaced by 'even' */
+/* li:nth-child(even)
+{
+	width: 50px;
+	border: 1px solid rgb(255, 0, 242);
+} */
+li:nth-child(2n+1)
+{
+	width: 100px;
+	border: 1px solid rgb(21, 182, 0);
+}
+/* Above '2n+1' can be replaced by 'odd' */
+/* li:nth-child(odd)
+{
+	width: 100px;
+	border: 1px solid rgb(21, 182, 0);
+} */

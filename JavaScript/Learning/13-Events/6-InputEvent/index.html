@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Input Event</title>
+	<style>
+		#input1, #input2
+		{
+			height: 50px;
+			width: 150px;
+			background-color: white;
+			color: black;
+			border: 1px solid black;
+			border-radius: 5px;
+			font-size: medium;
+			font-weight: 600;
+		}
+		.container
+		{
+			height: 400px;
+			width: 100%;
+			flex-direction: column;
+			gap: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		#box, p, span
+		{
+			font-family: "Arial";
+			font-size: large;
+			font-weight: 700;
+			text-align: center;
+			line-height: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">InputEvent is event object supporting input(form) related event handling.</div>
+	<div class="container">
+		<label for="input1">Name: </label>
+		<input id="input1" type="text">
+		<label for="input2">Select Car: </label>
+		<select name="vehicle" id="input2" onchange="showInfo()">
+			<option value="none">Select Any Car</option>
+			<option value="lambo">Lamborgini</option>
+			<option value="bugat">Bugatti</option>
+			<option value="tesla">Tesla</option>
+		</select>
+		<p id="screen">You will see your inputs here</p>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,89 @@
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.container
+{
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(135deg, #aa2ace 0%,#ca27d3 48%,#9469ea 100%);
+}
+.display
+{
+	overflow: hidden;
+	margin: 5px;
+	position: relative;
+	width: 50%;
+	filter: drop-shadow(5px 5px 10px rgb(61, 61, 61));
+}
+.display video
+{
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	border-radius: 3px;
+}
+.playback__info
+{
+	position : absolute;
+	width: 100%;
+	border: 2px solid red;
+}
+.progress__bar, .progress
+{
+	height: 5px;
+	width: 0%;
+	background-color: rgb(30, 252, 226);
+	transform: translateY(100%) translateY(-15px);
+	transition: all 0.2s ease-in-out;
+}
+.progress__bar
+{
+	width: 100%;
+	background-color: grey;
+	transform: translateY(100%) translateY(-10px);
+}
+.controls
+{
+	transform: translateY(100%);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: white;
+	transition: all 0.2s ease-in-out;
+}
+.controls:hover
+{
+	cursor: pointer;
+}
+.bar
+{
+	/* width: 20%; */
+	height: 5px;
+}
+.loop
+{
+	fill: white;
+}
+.skip
+{
+	color: white;
+	filter: drop-shadow(0px 0px 5px grey);
+}
+.display:hover .controls
+{
+	transform: translateY(-35px);
+}
+.display:hover .progress
+{
+	transform: translateY(-45px);
+}
+.display:hover .progress__bar
+{
+	transform: translateY(-40px);
+}

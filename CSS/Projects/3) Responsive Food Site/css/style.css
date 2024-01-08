@@ -1,0 +1,637 @@
+/* CSS Reset */
+* {
+  box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* Main Page Container */
+.container {
+  width: 100%;
+  /* height: 100%; */
+}
+/* Header Section with Navigation Bar*/
+header {
+  position: sticky;
+  top: 10px;
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+header::before {
+  content: "";
+  background-color: rgb(240, 240, 240);
+  box-shadow: 0px 0px 10px rgb(150, 150, 150);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+header img {
+  height: 60px;
+  margin-left: 20px;
+  margin-right: 170px;
+  transition: all 0.1s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+header img:hover {
+  filter: brightness(1.05);
+  animation-name: spin;
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+header nav {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+header nav ul li a {
+  color: black;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: bolder;
+  text-decoration: none;
+  margin: 20px;
+  padding: 12px 30px;
+  border-radius: 3px;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
+#activated {
+  background-color: rgb(218, 218, 218);
+  color: black;
+}
+#activated:hover {
+  background-color: #f69c14;
+  color: white;
+}
+header nav ul li a:hover {
+  background-color: #f69c14;
+  color: white;
+}
+#activated:active {
+  background-color: rgb(218, 218, 218);
+  color: grey;
+}
+header nav ul li a:active {
+  background-color: rgb(218, 218, 218);
+  color: grey;
+}
+.download {
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  margin: 0px 50px;
+}
+.download button {
+  width: 140px;
+  height: 40px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: bolder;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: #f69c14;
+  /* background-color: #7FCFF1; */
+  color: rgb(255, 255, 255);
+}
+.download button:hover {
+  background-color: #e08e13;
+  cursor: pointer;
+}
+.download button:active {
+  background-color: #f69c14;
+}
+/* Home Section Styling */
+#home {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: rgb(0, 0, 0);
+}
+#home .content {
+  text-align: center;
+  width: 46%;
+}
+.content h1 {
+  line-height: 10px;
+  margin-top: 160px;
+  margin-bottom: 20px;
+  font-family: "Short Stack", cursive;
+  font-weight: bolder;
+}
+.content p {
+  font-family: "Short Stack", cursive;
+  font-size: 15px;
+  padding: 10px;
+  font-weight: bolder;
+  margin-bottom: 70px;
+}
+#home button {
+  width: 150px;
+  height: 40px;
+  border: 3px solid white;
+  box-shadow: 0px 0px 10px grey;
+  border-radius: 50px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: bolder;
+  font-size: 17px;
+  background-color: #f67a14;
+  color: rgb(0, 0, 0);
+  /* background-color: #7FCFF1; */
+  transition: all 0.2s ease-in-out;
+}
+#home button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px #f67a14;
+}
+#home button:active {
+  transform: scale(0.8);
+  animation-name: click;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+@keyframes click {
+  from {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+#home::before {
+  content: "";
+  background-image: url("../images/White Food Bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: move;
+  background-position: 0px -320px;
+  transform: rotate(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  filter: hue-rotate(340deg) saturate(1.1) contrast(1.1);
+  transform-origin: center;
+  transition: all 0.3s ease-in-out;
+}
+/* Services Section Styling */
+#services {
+  position: absolute;
+  top: 423px;
+  width: 100%;
+  height: 420px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  z-index: 1;
+  overflow: hidden;
+}
+#services::before {
+  content: "";
+  background-image: url("../images/BG/Food\ Background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 0px -205px;
+  /* transform: rotate(180deg) scaleX(-1); */
+  position: absolute;
+  filter: brightness(1) contrast(0.9) sepia(0.01);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#services h2 {
+  font-family: "Short Stack", cursive;
+  font-weight: bolder;
+  line-height: 50px;
+}
+.foods {
+  width: 200%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+}
+.items1, .items2{
+  border: 2px solid transparent;
+  width: 300px;
+  height: 350px;
+  border-radius: 5px;
+  font-family: "Shadows Into Light", cursive;
+  line-height: 22px;
+  background-color: rgba(255, 255, 255, 0.425);
+  backdrop-filter: blur(30px);
+  transition: all 0.12s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+.items1:hover, .items2:hover{
+	border: 2px solid white;
+  box-shadow: 0px 0px 10px white;
+}
+.items1 p, .items2 p{
+  text-align: center;
+  font-family: "Shadows Into Light", cursive;
+  /* font-weight: bolder; */
+  font-size: 18px;
+  /* width: 170px; */
+  padding: 10px 20px;
+}
+.items1 img, .items2 img{
+  margin-top: 25px;
+  width: 170px;
+  filter: drop-shadow(7px 7px 7px white) brightness(0.9);
+  transition: all 0.2s ease-in;
+}
+.items1 img:hover, .items2 img:hover {
+  filter: drop-shadow(7px 7px 7px white) brightness(1.1);
+}
+.items1
+{
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  animation-name: slide1;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.items2
+{
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  animation-name: slide2;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes slide1
+{
+  from
+  {
+    opacity: 1;
+    position: relative;
+    right: 0px;
+  }
+  30%
+  {
+    opacity: 1;
+    position: relative;
+    right: 0px;
+  }
+  49%
+  {
+    opacity: 1;
+    position: relative;
+    right: 1300px;
+  }
+  50%
+  {
+    opacity: 0;
+    position: relative;
+    right: 1300px;
+  }
+  51%
+  {
+    opacity: 0;
+    position: relative;
+    right: -1300px;
+  }
+  52%
+  {
+    opacity: 1;
+    position: relative;
+    right: -1300px;
+  }
+  70%
+  {
+    opacity: 1;
+    position: relative;
+    right: -1300px;
+  }
+  89%
+  {
+    opacity: 1;
+    position: relative;
+    right: 0px;
+  }
+  to
+  {
+    opacity: 1;
+    position: relative;
+    right: 0px;
+  }
+}
+@keyframes slide2
+{
+  from
+  {
+    opacity: 1;
+    position: relative;
+    right: 0px;
+  }
+  30%
+  {
+    opacity: 1;
+    position: relative;
+    right: 0px;
+  }
+  49%
+  {
+    opacity: 1;
+    position: relative;
+    right: 1300px;
+  }
+  50%
+  {
+    opacity: 1;
+    position: relative;
+    right: 1300px;
+  }
+  51%
+  {
+    opacity: 1;
+    position: relative;
+    right: 1300px;
+  }
+  52%
+  {
+    opacity: 1;
+    position: relative;
+    right: 1300px;
+  }
+  70%
+  {
+    opacity: 1;
+    position: relative;
+    right: 1300px;
+  }
+  89%
+  {
+    opacity: 1;
+    position: relative;
+    right: 2600px;
+  }
+  90%
+  {
+    opacity: 0;
+    position: relative;
+    right: 2600px;
+  }
+  99%
+  {
+    opacity: 0;
+    position: relative;
+    right: 0px;
+  }
+  to
+  {
+    opacity: 1;
+    position: relative;
+    right: 0px;
+  }
+}
+/* Association Section Styling */
+#associations {
+  position: absolute;
+  top: 843px;
+  width: 100%;
+  height: 320px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+#associations h2 {
+  font-family: "Short Stack", cursive;
+  font-weight: bolder;
+  line-height: 80px;
+}
+#associations p {
+  font-family: "Short Stack", cursive;
+  line-height: 100px;
+}
+#logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#logos img {
+  border-radius: 35%;
+  width: 130px;
+  transition: all 0.2s ease-out;
+}
+#logos img:hover {
+  transform: scale(1.2);
+}
+/* Contact Section Styling */
+#contacts {
+  position: absolute;
+  top: 1163px;
+  width: 100%;
+  height: 360px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  z-index: 1;
+}
+#contacts::before {
+  content: "";
+  background-image: url("../images/BG/Spoon BG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 0px -78px;
+  /* transform: rotate(0deg) scaleX(-1); */
+  position: absolute;
+  filter: brightness(0.9) contrast(0.9) sepia(0.01);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+#contacts h2 {
+  font-family: "Short Stack", cursive;
+  font-weight: bolder;
+  text-align: left;
+  margin-left: 210px;
+  line-height: 80px;
+}
+#formContacts {
+  width: 100%;
+  height: 270px;
+  display: flex;
+  justify-content: space-between;
+}
+#formField {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 470px;
+  height: 100%;
+  padding-left: 100px;
+}
+#formField label {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: bolder;
+  font-size: 17px;
+}
+.userinput {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: bolder;
+  width: 320px;
+  height: 35px;
+  margin: 5px;
+  border: none;
+  background: none;
+  border-bottom: 3px solid black;
+  padding: 0px 35px;
+  font-size: 15px;
+  outline: none;
+  background-color: transparent;
+}
+.userinput:focus {
+  outline: none;
+  border-bottom: 3px solid white;
+  background-color: transparent;
+}
+#userName {
+  background: url("../images/Socials/Username Icon.png") no-repeat left;
+  background-size: 17px;
+  background-position-x: 7px;
+}
+#userEmail {
+  background: url("../images/Socials/Email Icon.png") no-repeat left;
+  background-size: 17px;
+  background-position-x: 7px;
+}
+#userAddress {
+  background: url("../images/Socials/Address Icon.png") no-repeat left;
+  background-size: 19px;
+  background-position-x: 7px;
+}
+.userinput::placeholder {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: bolder;
+  color: rgba(255, 255, 255, 0.719);
+}
+.userinput:focus::placeholder {
+  outline: none;
+  color: rgba(255, 255, 255, 0.425);
+}
+#formField button {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: bolder;
+  border: 2px solid white;
+  color: black;
+  border-radius: 4px;
+  background-color: white;
+  transition: all 0.15s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+#formField button:hover {
+  border: 2px solid #ffb03a;
+  color: black;
+  background-color: #ffb03a;
+}
+#formField button:active {
+  border: 2px solid white;
+  background-color: white;
+}
+#socialMedia {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 15px;
+  width: 250px;
+}
+#socialMedia img {
+  width: 30px;
+  transition: all 0.2s ease-in-out;
+}
+#socialMedia img:hover {
+  animation-name: shake;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  filter: invert(1) drop-shadow(0px 0px 10px #f69c14);
+}
+@keyframes shake {
+  from {
+    transform: scale(1) rotate(0deg);
+  }
+  40% {
+    transform: scale(1.1) rotate(-30deg);
+  }
+  80% {
+    transform: scale(1.1) rotate(30deg);
+  }
+  to {
+    transform: scale(1.1) rotate(0deg);
+  }
+}
+/* Footer Section Styling */
+footer {
+  position: absolute;
+  top: 1525px;
+  /* background-color: #F8D8DB; */
+  background-color: #de6525;
+  background-color: #f69c14;
+  background-color: #55a0b4;
+  background-color: #7fcff1;
+  width: 100%;
+  height: 70px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  font-family: arial;
+  font-size: 13px;
+  color:rgb(39, 39, 39);
+}

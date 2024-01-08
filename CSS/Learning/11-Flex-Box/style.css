@@ -1,0 +1,95 @@
+*
+{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+.container
+{
+	margin: 10px;
+	border: 2px solid red;
+	/* width: 1200px; */
+	width: 100%;
+	height: 580px;
+	/* initializing flex-box for container containing flex-items*/
+	display: flex;
+	/* Setting flex-directions */
+	flex-direction: row;
+	/* flex-direction: row-reverse;	*/
+	/* flex-direction: column; */
+	/* flex-direction: column-reverse;  */
+
+	flex-wrap: wrap;
+	/* flex-wrap: nowrap;				Default Value */
+	/* flex-wrap: wrap-reverse; */
+
+	/* Shortcut for both flex-direction and flex-wrap */
+	/* flex-flow: row wrap-reverse; */
+	/* flex-flow: row wrap; */
+	/* flex-flow: row-reverse wrap; */
+	/* flex-flow: column wrap; */
+	/* flex-flow: column wrap-reverse; */
+	/* flex-flow: column-reverse wrap; */
+	/* flex-flow: column-reverse wrap-reverse; */
+
+	/* Align the flex-box childrens items horizontally */
+	/* justify-content: center; */
+	/* justify-content: left; */
+	/* justify-content: right; */
+	/* Keeps equal space between flex items except the edge */
+	/* justify-content: space-between; */
+	/* justify-content: space-around; */
+	/* justify-content: space-evenly;  */
+
+	/* Align flex-box items vertically */
+	
+	/* align-content: center; */			/* 'align-content' similar to 'align-items' in Flexbox. But, not in Grid. */
+	/* align-items: center; */
+	/* align-items: flex-start; */
+	/* align-items: flex-end; */
+	/* align-items: stretch; */
+
+}
+.box
+{
+	width: 60px;
+	height: 60px;
+	border: 2px solid red;
+	margin: 10px;
+}
+#box1
+{
+	/* Flex properties for actual flex-items */
+	/* Higher the order, later the item comes */
+	order: 1;
+	align-self: center;
+	justify-self: center;
+	/* flex-grow: 1; */
+	/* flex-shrink: 2; */
+}
+#box2
+{
+	/* order: 1; */
+	/* Flex basis acts as width and height for row and column directions respectively */
+	flex-basis: 100px;
+}
+#box3
+{
+	/* order: 1; */
+	/* flex: (flex-grow) (flex-shrink) (flex-basis) is the shortcut */
+	flex: 2 2 100px;
+}
+#box4
+{
+	/* order: 1; */
+	/* Align specific flex item vertically */
+	align-self: center;
+	/* align-self: flex-start; */
+	/* align-self: flex-end; */
+}
+#box5
+{
+	/* order: 1; */
+	justify-self: center;
+	/* align-self: center; */
+}

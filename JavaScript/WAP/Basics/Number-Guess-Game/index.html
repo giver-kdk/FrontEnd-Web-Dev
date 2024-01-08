@@ -1,0 +1,35 @@
+<!-- Write a JavaScript program where the program takes a random integer between 1 to 10,  -->
+<!-- The user is then prompted to input a guess number. If the user input matches with guess number -->
+<!-- The program will display a message "Good Work" otherwise display a message "Not matched". -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Number Guessing Game</title>
+</head>
+<body>
+	<h2>We'll choose a number between 1 and 10. You should guess what we choosed.</h2>
+	<button id="btn">Play</button>
+	<div id="status"></div>
+	<script>
+		let element = document.getElementById("btn");
+		element.addEventListener("click", start);
+		function start()
+		{
+			let output = document.getElementById("status");
+			output.textContent = "Let's Start";
+			debugger;
+			console.log(output.innerHTML);
+			let number = Math.ceil(Math.random() * 10);
+			setTimeout(() =>
+			{
+				let guess = Number(prompt("Enter any number from 1 to 10"));
+				if(number == guess) output.textContent = "CONGRATULATIONS!!! Your guess matched...";
+				else output.textContent = "SORRY!!! Your guess didn't match...";
+			}, 0);
+		}
+	</script>
+</body>
+</html>

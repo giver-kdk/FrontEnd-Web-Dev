@@ -1,0 +1,22 @@
+@use '../mixin' as mix;
+
+h1
+{
+	// Font size above desktop width
+	font-size: 54px;
+	// Font size below desktop width
+	@include mix.breakpoint("desktop")
+	{
+		font-size: 42px;
+	}
+	// Font size below tablet width
+	@include mix.breakpoint("tablet")
+	{
+		font-size: 36px;
+	}
+	// Font size below mobile width
+	@include mix.breakpoint("mobile")
+	{
+		font-size: 28px;
+	}
+}

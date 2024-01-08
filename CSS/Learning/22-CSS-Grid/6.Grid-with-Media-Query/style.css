@@ -1,0 +1,89 @@
+.container
+{
+	display: grid;
+	grid-gap: 5px;										/* Set both row and column spacing */
+	height: 600px;
+	/* Setting layout widths */
+	grid-template-columns: 1fr 4fr 1fr;
+	grid-template-rows: 0.3fr 3fr 0.3fr;
+}
+
+#header
+{
+	/* 'grid-area' assigns name to grid items. So, its usable in 'grid-template-areas' */
+	grid-area: header;
+}
+#ads
+{
+	grid-area: ads;
+}
+#main
+{
+	grid-area: main;
+	padding: 0px 50px;
+}
+#sidebar
+{
+	grid-area: sidebar;
+}
+#footer
+{
+	grid-area: footer;
+}
+/* Media query for specific range of width */
+@media only screen and (min-width: 1000px)
+{
+	/* Setting visual 'grid-template-area' at wide screen width */
+	.container
+	{
+		grid-template-areas: 
+		'header		header		header'					/* Number or space or tabs doesn't matter */
+		'ads		main		sidebar'
+		'footer		footer		footer';
+	}
+	.box
+	{
+		text-align: center;
+		background-color: rgb(123, 255, 178);
+	}
+}
+@media only screen and (min-width: 600px) and (max-width: 1000px)
+{
+	/* Setting visual 'grid-template-area' at medium screen width */
+	.container
+	{
+		grid-template-areas: 
+		'header		header		header'					/* Number or space or tabs doesn't matter */
+		'ads		main		main'
+		'sidebar	sidebar		sidebar'				/* 'sidebar' shifted down */
+		'footer 	footer		footer';
+	}
+	.box
+	{
+		text-align: center;
+		background-color: rgb(240, 123, 255);
+	}
+}
+@media only screen and (min-width: 300px) and (max-width: 600px)
+{
+	/* Setting visual 'grid-template-area' at small screen width */
+	.container
+	{
+		grid-template-areas: 
+		'header		header		header'					/* Number or space or tabs doesn't matter */
+		'main		main		main'					/* 'ads' is removed from the template */
+		'sidebar	sidebar		sidebar'
+		'footer 	footer		footer';
+	}
+	/* Since, 'ads' is also a grid item. So, its space is reserved as empty cell even though its removed */
+	#ads
+	{
+		/* Set display to none to remove reserved space for 'ads' */
+		display: none;
+	}
+	.box
+	{
+		text-align: center;
+		background-color: rgb(123, 176, 255);
+	}
+}

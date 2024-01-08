@@ -1,0 +1,200 @@
+*
+{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+.container
+{
+	height: 1200px;
+	background-image: url('../Images/Gym Aaunty.jpg');
+	color: white;
+	border: 1px solid grey;
+	height: 1200px;
+}
+.left
+{
+	/* outline: 2px solid white; */
+	display: inline-block;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.left img
+{
+	width: 80px;
+	display: inline-block;
+	margin: 0px 0px 0px 45px;
+}
+.left h2
+{
+	text-align: center;
+	font-family: 'Mochiy Pop P One', sans-serif;
+	font-size: 17px;
+}
+.mid
+{
+	border: 1px solid white;
+	width: 600px;
+	margin: 30px auto;
+	backdrop-filter: blur(10px);
+	border-radius: 30px;
+	position: sticky;
+	top: 5px;
+}
+.navigation
+{
+	width: 550px;
+	margin: 0px auto;
+}
+.navigation li 
+{
+	display: inline-block;
+	list-style: none;
+	/* margin: 10px 20px; */
+	padding: 10px 20px;
+}
+.navigation li a
+{
+	color: white;
+	text-decoration: none;
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: bold;
+}
+.right
+{
+	/* border: 2px solid white; */
+	display: inline-block;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+.right input
+{
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: bolder;
+	margin: 10px 5px;
+	width: 70px;
+	height: 30px;
+	border: 1px solid transparent;
+	border-radius: 3px;
+	color: rgb(78, 78, 78);
+	background-color: white;
+}
+.landing
+{
+	/* border: 2px solid white; */
+	margin: 100px 20px 20px 50px;
+	padding: 20x;
+	width: 500px;
+}
+.landing h2
+{
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 20px;
+	margin: 20px;
+	text-align: center;
+}
+form input
+{
+	display: block;
+	border: 2px solid white;
+	width: 280px;
+	height: 40px;
+	margin: 10px auto;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: rgb(240, 234, 227);
+}
+#submission
+{
+	color: rgb(29, 25, 25);
+	/* background-color: ; */
+	font-weight: bolder;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 14px;
+	border: 1px solid transparent;
+	/* background-image: linear-gradient(to bottom right, #85FFBD, #FFFB7D); */
+	background-color: #85FFBD;
+}
+.navigation a:hover
+{
+	color: #85FFBD;
+	text-shadow: 0px 0px 3px #FFFB7D;
+}
+.navigation a:active
+{
+	color: white;
+	text-shadow: 0px 0px 3px #FFFB7D;
+}
+.first .activated
+{
+	color: #85FFBD;
+	text-shadow: 0px 0px 3px #FFFB7D;
+}
+input:focus
+{
+	outline: none;
+	border-color: #85FFBD;
+}
+input:focus::placeholder
+{
+	color: rgb(167, 167, 167);
+}
+.right input:hover
+{
+	cursor: pointer;
+	background-image: linear-gradient(to bottom right, #85FFBD, #FFFB7D);
+}
+.right input:active
+{
+	background-image: linear-gradient(white, white);
+}
+@keyframes button1
+{
+	form
+	{
+		background-color: #85FFBD;
+	}
+	to
+	{
+		background-color: #0ea755;
+		color: white;
+	}
+}
+#submission:hover
+{
+	cursor: pointer;
+	animation-name: button1;
+	animation-duration: 0.4s;
+	animation-timing-function: ease-out;					/* Animation smoothing */
+	animation-fill-mode: forwards;		
+}
+.quote
+{
+	border: 1px solid white;
+	position: absolute;
+	top: 800px;
+	left: 200px;
+	width: 600px;
+	height: 300px;
+	margin: 10px auto;
+	border-radius: 20px;
+	backdrop-filter: blur(14px);
+}
+.box
+{
+	/* border: 1px solid white; */
+	width: 500px;
+	margin: 100px auto;
+}
+hr
+{
+	width: 300px;
+	margin: -55px auto;
+}
+.box h3
+{
+	text-align: center;
+	font-family: 'Titillium Web', sans-serif;
+}

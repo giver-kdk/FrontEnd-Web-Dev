@@ -1,0 +1,148 @@
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+section
+{
+	height: 100vh;
+	width: 100%;
+	background-image: url('../img/blur_drops_bg.jpeg');
+	background-color:rgb(27, 149, 156);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+}
+.navbar
+{
+	height: 60px;
+	background-color: azure;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 10px;
+}
+.status, .logout
+{
+	width: 150px;
+	height: 40px;
+	text-align: center;
+	background-color: rgb(177, 197, 197);
+	border-radius: 5px;
+	border-color: transparent;
+	color: black;
+	padding: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	transition: all 0.5s ease-in-out;
+}
+.logout:hover
+{
+	cursor: pointer;
+	background-color: rgb(63, 127, 130);
+	color: azure;
+}
+.status.registered
+{
+	background-color: rgb(27, 201, 120);
+	color: white;
+}
+h2
+{
+	color: azure;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 2rem;
+	line-height: 5rem;
+	text-align: center;
+}
+.container
+{
+	height: 300px;
+	width: 500px;
+	border-color: transparent;
+	border-radius:10px;
+	filter: drop-shadow(5px 5px 15px grey);
+	background-color: azure;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+form
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: flex-start;
+}
+form label
+{
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 2rem;
+}
+form input
+{
+	height: 50px;
+	width: 360px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	color: grey;
+	padding: 5px;
+}
+form #password
+{
+	height: 50px;
+	width: 360px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.5rem;
+	color: grey;
+	padding: 5px;
+
+}
+#signup, #login
+{
+	height: 50px;
+	width: 200px;
+	background-color: black;
+	color: azure;
+	border-color: transparent;
+	border-radius: 7px;
+	font-size: 1rem;
+	transition: all 0.2s ease-in-out;
+}
+#signup:hover, #login:hover
+{
+	background-color: rgb(63, 127, 130);
+	color: azure;
+}
+
+.first-btn
+{
+
+	/* padding: 3px; */
+	/* line-height: 17px; */
+	width: 32px;
+	border-color: transparent;
+	background-color: transparent;
+	border-radius: 50px;
+}
+.pw__error, .mail__error
+{
+	color: red;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: medium;
+	display: none;
+}
+.emoji__pw
+{
+	display: flex;
+	width: 400px;
+	gap: 10px;
+	align-items: center;
+	/* flex-direction: column; */
+}

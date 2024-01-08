@@ -1,0 +1,54 @@
+#firstPara
+{
+	border-width: 5px;				/* Width of border line */
+	border-style: solid;			
+	border-color: red;
+	height: 50px;					/* Height of selected element */
+	width: 300px;
+	border-radius: 10px;			/* Smoothing radius */
+}
+#secondPara
+{
+	border: 5px solid green;		/* Multiple border properties at a time */
+	height: 50px;
+	width: 300px;
+	border-radius: 20px;
+}
+#thirdPara
+{
+	height: 50px;
+	width: 300px;
+	/* Individual border side properties */
+	border-top: 5px solid blue;
+	border-bottom: 5px solid red;
+	border-right: 5px solid orange;
+	border-left: 5px solid green;
+	/* Individual border corner radius */
+	border-top-left-radius: 10px;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 30px;
+}
+#forthPara
+{
+	height: 200px;
+	width: 300px;
+	border: 2px solid black;
+	border-radius: 5px;
+	/* Inserting background image in a element */
+	background-image: url('Images/Cute_Cat.png');
+	background-repeat: no-repeat;				/* Stops repeatation of images */
+	/* background-position: top left; */
+	/* background-position: top right; */
+	/* background-position: top center; */
+	/* background-position: bottom left; */
+	/* background-position: bottom right; */
+	/* background-position: bottom center; */
+	/* background-position: center left; */
+	/* background-position: center right; */
+	/* background-position: center center; */
+	/* background-position-x: 50px; */			/* Horizontal Spacing */
+	/* background-position-y: 50px; */			/* Vertical Spacing */
+	background-position: 180px 70px;
+	background-size: 150px 150px;				/* Dimension of background image */
+}

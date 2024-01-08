@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Cookies In JS</title>
+</head>
+<body>
+    <p>Encoding and Decoding cookies containing Symbol characters</p>
+    <button onclick="createCookies()">Create Cookie</button>
+    <button onclick="readCookies()">Read Cookie</button>
+    <button onclick="deleteCookies()">Delete Cookie</button>
+    <script>
+        function createCookies()
+        {
+			// Writing key value pair without symbol is not a problem
+			document.cookie = "username = Giver";
+			// But, key value pair with symbol(like: '=, ;') is not recognized as cookies
+			// In this case, password is "abc;;abc". But, ";" is a separator for cookies
+            // document.cookie = "password = abc;;abc";
+			// So, make those symbols recognizable by cookies by encoding
+			let pw = "abc;;abc";
+			// NOTE: Key can also be encoded similarly if it uses any symbol
+            document.cookie = `password = ${encodeURIComponent(pw)}`;
+			
+            alert("Cookies has been created");
+        }
+        function readCookies()
+        {
+            let allCookies = document.cookie;
+            console.log(allCookies);
+            let cookieArray = allCookies.split("; ");
+            console.log(cookieArray);
+            for(let i = 0; i < cookieArray.length; i++)
+            {
+				// Decode the encoded symbol when reading
+                let key =  decodeURIComponent(cookieArray[i].split("=")[0]); 			
+                let value = decodeURIComponent(cookieArray[i].split("=")[1]); 
+                console.log(`Key is ${key} and value is ${value}`);
+            }
+        }
+        function deleteCookies()
+        {
+            document.cookie = "username =; expires = Sun, 01 Jan 2000 01:00:00 GMT";
+            document.cookie = "password =; expires = Sun, 01 Jan 2000 01:00:00 GMT";
+            console.log(`Cookie after deletion:`);
+            readCookies();
+            alert("Cookies has been deleted");
+        }
+    </script>
+</body>
+</html>

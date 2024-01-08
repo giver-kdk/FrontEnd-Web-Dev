@@ -1,0 +1,55 @@
+body
+{
+	background-color: beige;
+}
+.container
+{
+	padding: 10rem 0 0 0;
+}
+.nav
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: transparent;
+	border-radius: 7px;
+	box-shadow: 0 0 10px rgb(216, 216, 216);
+}
+p
+{
+	padding: 2rem;
+	font-family: Inter, sans-serif;
+	font-size: 17px;
+}
+a
+{
+	font-family: Impact, Haettenschweiler, sans-serif;
+	font-size: 20px;
+	color: grey;
+	text-decoration: none;
+	margin: 2rem;
+}
+footer
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	color: rgb(0, 149, 255);
+}
+footer div:hover
+{
+	cursor: pointer;
+}
+.highlight
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background-color: rgb(151, 255, 217);
+	border-radius: 20px;
+	transition: all 0.2s ease-in-out;
+	padding: 10px;
+	transform: translate(0px, 0px);
+}

@@ -1,0 +1,91 @@
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;	
+}
+body
+{
+	min-height: 100vh;
+	background-color: aquamarine;
+	background-image: url("./oh-la-la.jpeg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-width: 350px;
+	min-height: 140px;
+	background-color: azure;
+	border-radius: 5px;
+	filter: drop-shadow(0px 0px 5px grey);
+}
+.foods 
+{
+	margin: 10px;
+	min-width: 70%;
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	font-family: Inter, sans-serif;
+	font-size: large;
+}
+.foods li
+{
+	border-bottom: 1px solid grey;
+	line-height: 2.5rem;
+}
+.foods li input
+{
+	display: none;
+}
+.foods li label::before
+{
+	content: "🟦";
+	margin-right: 10px;
+	opacity: 0.3;
+}
+.foods .selected::before
+{
+	opacity: 1;
+}
+h3
+{
+	line-height: 2rem;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: xx-large;
+	font-weight: 300;
+}
+.order__food
+{
+	margin: 10px;
+	width: 300px;
+}
+.menus
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 10px;
+	padding-bottom: 10px;
+}
+#khaana
+{
+	width: 200px;
+	height: 40px;
+}
+button
+{
+	width: 80px;
+	height: 40px;
+}

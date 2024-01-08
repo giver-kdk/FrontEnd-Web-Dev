@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Timer</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<div class="container">
+		<ul class="navbar">
+			<li data-time="300" class="item">5 mins</li>
+			<li data-time="1200" class="item">20 mins</li>
+			<li data-time="3600" class="item">1 hour</li>
+			<li class="item user_input">
+				<input type="number" class="time_input" placeholder="Enter Minute">
+				<button class="btn">Enter</button>
+			</li>
+		</ul>
+
+		<div class="timer_screen">
+			<div class="time_left">00:00</div>
+			<div class="time_end">&nbsp;</div>
+		</div>
+	</div>
+
+	<script src="./script.js"></script>
+</body>
+</html>

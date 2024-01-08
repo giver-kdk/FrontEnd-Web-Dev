@@ -1,0 +1,41 @@
+@forward "globals";				// Import Partials
+@use "globals" as theme;		// Import Variables
+@use "mixin" as mix;			// Import Mixins
+
+.grid
+{
+	// We can write media query inside the selector in SASS
+	@media only screen and (max-width: 320px)
+	{
+		// This style will be applied to '.grid' conditionally
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto;
+	}
+	// Writing similar media query for tablet using 'mixin'
+	@include mix.breakpoint("tablet")
+	{
+		// '@content' gets replaced by these
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto;
+	}
+	display: grid;
+	max-width: theme.$standard-wide;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	margin: auto;
+	gap: 2rem;
+	// Same as ".grid__main" where '&' is parent selector
+	&__main
+	{
+		background-color: theme.$primary;
+		padding: 2rem;
+	}
+	// So, SCSS encourages the BEM naming convention 
+	&__sidebar
+	{
+		background-color: theme.$secondary;
+		padding: 2rem;
+	}
+
+}
+
