@@ -18,17 +18,17 @@ function block_key(e)
 {
 	// console.log(e.keyCode);
 	let allowedKey = e.keyCode == 8 || e.keyCode == 37 || e.keyCode == 38 || e.keyCode == 39 || e.keyCode == 40 || e.keyCode == 46;
-	if(allowedKey)
-	{
-		pwErr.style.display = "none";
-	}
-	else
-	{
-		// Stops the input of the key on field
-		e.preventDefault();
-		pwErr.innerHTML = "Please enter only Emoji";
-		pwErr.style.display = "block";
-	}
+	// if(allowedKey)
+	// {
+	// 	pwErr.style.display = "none";
+	// }
+	// else
+	// {
+	// 	// Stops the input of the key on field
+	// 	e.preventDefault();
+	// 	pwErr.innerHTML = "Please enter only Emoji";
+	// 	pwErr.style.display = "block";
+	// }
 }
 function logout_proceed()
 { 

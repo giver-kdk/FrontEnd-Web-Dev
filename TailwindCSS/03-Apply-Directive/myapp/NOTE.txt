@@ -1,0 +1,2 @@
+- '@apply' directive can be used to apply the tailwind css in the CSS file itself
+- It helps to make the HTML code clean

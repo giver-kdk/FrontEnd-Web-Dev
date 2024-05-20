@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.paragraph
+{
+	/* Here, Tailwind class property applied via CSS property using 'apply' directive */
+	@apply bg-green-400 m-1;
+}

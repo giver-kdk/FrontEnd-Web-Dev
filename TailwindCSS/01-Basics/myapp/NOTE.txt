@@ -1,0 +1,19 @@
+- Command to install tailwind: 
+	- npm install -D tailwindcss
+	- npx tailwindcss init
+
+- Modify the TailwindCSS Config file as: 
+  module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+- Paste the TailwindCSS Directives to index.css of the project: 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+- Apply TailwindCSS defined classes to the HTML elements

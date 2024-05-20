@@ -40,6 +40,8 @@ function login_proceed()
 				mailFound = true;
 				if(localStorage.getItem(localStorage.key(i)) == pwInput.value)
 				{
+					// var ciphertext = CryptoJS.AES.encrypt(pwInput.value, "hello");
+					console.log(ciphertext);
 					localStorage.setItem("loggedIn", "true");
 					headerLogin.innerHTML = "You are Logged In Now...";
 					logStatus.innerHTML = "Logged In";

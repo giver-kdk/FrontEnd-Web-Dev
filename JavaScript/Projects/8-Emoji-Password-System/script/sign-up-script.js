@@ -17,7 +17,7 @@ function signup()
 	if(pwAllowed) pwErr.style.display = "none";
 	else
 	{
-		pwErr.innerHTML = "Please enter atleast 4 Emoji";
+		pwErr.innerHTML = "Please enter atleast 4 Emoji or 8 Characters";
 		pwErr.style.display = "block";
 	}
 
@@ -43,6 +43,7 @@ function signup()
 		if(accountAvailable)
 		{
 			localStorage.setItem("loggedIn", "true");
+			console.log(playfair(pwInput.value));
 			localStorage.setItem(mailInput.value, pwInput.value);
 			headerSign.innerHTML = "CONGRATULATIONS!!! You are Registered...";
 			logStatus.innerHTML = "Logged In";

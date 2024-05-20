@@ -1,0 +1,1 @@
+- Goto tailwind.config.js to add custom properties for the app(Eg: Color Theme)
