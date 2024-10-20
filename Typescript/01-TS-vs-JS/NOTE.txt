@@ -1,0 +1,17 @@
+1. Run following command for basic typescript code setup: 
+	- npm init
+	- npm install typescript nodemon ts-nodemon
+
+2. Initilize the typescript with one of the commands below:
+	- tsc --init
+
+3. To compile typescript file: 
+	- Compile one file to JS: tsc filename.ts
+	- Compile all files to JS: tsc
+
+
+
+
+- NOTE: 
+	- Delete the "tsc.ps1" file if the 'tsc' command doesn't work: 
+		- "tsc.ps1" Path: C:\Users%USERNAME%\AppData\Roaming\npm\tsc.ps1
