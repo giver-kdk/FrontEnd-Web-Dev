@@ -30,3 +30,28 @@ function subtract(num1: number, num2: number, num3: number = 0) : number
 	return num1 - num2 - num3;
 }
 console.log("Substraction: " + subtract(9, 5));
+
+
+// Rest Parameter
+function add(...nums: number[]): number					// The type of resting variables should be specified
+{
+	let sum = 0;
+	nums.forEach(num => {
+		sum = sum + num;
+	});
+	return sum;
+}
+console.log("Addition: ", add(1, 2, 3, 4, 5));
+
+
+// Tuple Parameters
+// Function taking primitaive data type parameter and returning 'tuple'
+function makePersonTuple(name: string, age: number): [string, number]
+{
+	return [name, age];
+}
+
+let p1 : [name: string, age: number];
+p1 = makePersonTuple("Ram KC", 19);
+
+console.log("Tuple Data from Function: " + p1);

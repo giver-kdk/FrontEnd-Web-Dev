@@ -21,3 +21,19 @@ function subtract(num1, num2, num3 = 0) {
     return num1 - num2 - num3;
 }
 console.log("Substraction: " + subtract(9, 5));
+// Rest Parameter
+function add(...nums) {
+    let sum = 0;
+    nums.forEach(num => {
+        sum = sum + num;
+    });
+    return sum;
+}
+console.log("Addition: ", add(1, 2, 3, 4, 5));
+// Tuple Parameters
+function makePersonTuple(name, age) {
+    return [name, age];
+}
+let p1;
+p1 = makePersonTuple("Ram KC", 19);
+console.log("Tuple Data from Function: " + p1);
