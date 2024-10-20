@@ -43,6 +43,12 @@ tupleData = ["Ram KC", 21, true];
 console.log("User Data as Tuple: " +  tupleData);	
 
 
+// ***** Generic Arrays *****
+let a1: Array<string>;								// It is same as string[]
+
+a1 = ["Ram", "Shyam"];
+console.log("Generic Array: " + a1);
+
 // ***** Enum *****
 // Using 'enum' keyword is only supported in TypeScript
 enum Colors {

@@ -30,10 +30,22 @@ function add(...nums) {
     return sum;
 }
 console.log("Addition: ", add(1, 2, 3, 4, 5));
+let values = [6, 7, 8, 9];
+console.log("Addition: ", add(...values));
 // Tuple Parameters
+// Function taking primitaive data type parameter and returning 'tuple'
 function makePersonTuple(name, age) {
     return [name, age];
 }
 let p1;
 p1 = makePersonTuple("Ram KC", 19);
 console.log("Tuple Data from Function: " + p1);
+// Generic Function
+function display(values) {
+    console.log("Generic Function Output: ");
+    values.forEach(value => {
+        console.log(value);
+    });
+}
+display([1, 2, 3, 4]);
+display(["Ram", "Shyam", "Hari"]);

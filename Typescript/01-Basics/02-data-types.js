@@ -27,6 +27,10 @@ let tupleData; // This tuple should have the elements of sepecfied data types
 tupleData = ["Ram KC", 21, true];
 // Tuples can be used to fetch data of specific types
 console.log("User Data as Tuple: " + tupleData);
+// ***** Generic Arrays *****
+let a1; // It is same as string[]
+a1 = ["Ram", "Shyam"];
+console.log("Generic Array: " + a1);
 // ***** Enum *****
 // Using 'enum' keyword is only supported in TypeScript
 var Colors;

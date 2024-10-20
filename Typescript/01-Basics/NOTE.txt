@@ -18,3 +18,5 @@
 - NOTE: 
 	- Delete the "tsc.ps1" file if the 'tsc' command doesn't work: 
 		- "tsc.ps1" Path: C:\Users%USERNAME%\AppData\Roaming\npm\tsc.ps1
+
+	- Typescript was made by Microsoft, so it is some what combination of C# and JavaScript.

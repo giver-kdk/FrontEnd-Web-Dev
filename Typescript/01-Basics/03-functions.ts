@@ -42,6 +42,8 @@ function add(...nums: number[]): number					// The type of resting variables sho
 	return sum;
 }
 console.log("Addition: ", add(1, 2, 3, 4, 5));
+let values = [6, 7, 8, 9];
+console.log("Addition: ", add(...values));
 
 
 // Tuple Parameters
@@ -55,3 +57,16 @@ let p1 : [name: string, age: number];
 p1 = makePersonTuple("Ram KC", 19);
 
 console.log("Tuple Data from Function: " + p1);
+
+
+// Generic Function
+function display<T>(values: T[]) : void
+{
+	console.log("Generic Function Output: ");
+	values.forEach(value => {
+		console.log(value);
+	});
+}
+
+display<number>([1, 2, 3, 4]);
+display<string>(["Ram", "Shyam", "Hari"]);
