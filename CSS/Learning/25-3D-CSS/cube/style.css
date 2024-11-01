@@ -8,11 +8,12 @@
 	height: 300px;
 	width: 300px;
 	perspective: 1000px;
-	transform-style: preserve-3d;
-	transform: rotateY(-30deg) rotateZ(30deg);
 	position: relative;
 	left: 30%;
 	top: 30%;
+	/* Preserve 3D property is required to control the whole cube in 3D space from one element */
+	transform-style: preserve-3d;
+	transform: rotateY(-30deg) rotateZ(30deg);
 }
 
 .cube__front--face, .cube__back--face, .cube__left--face,
